@@ -46,9 +46,7 @@ public class LinearEquation {
                 result += Math.abs(y2 - y1) + "/" + Math.abs(x2 - x1) + "x";
             }
         }
-        if (y2 == y1) {
-        }
-        else {
+        if (y2 != y1) {
             if (yIntercept() > 0) {
                 result += " + " + yIntercept();
             } else if (yIntercept() < 0) {
