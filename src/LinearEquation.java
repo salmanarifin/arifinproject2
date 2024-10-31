@@ -55,18 +55,11 @@ public class LinearEquation {
         }
         return result;
     }
-    public void lineInfo() {
+    public String lineInfo() {
         if (x1 == x2) {
-            System.out.println("These points are on a vertical line: x = " + x1);
-            System.out.println("The slope is undefined.");
-            System.out.println("There is no y-intercept.");
-            System.out.println("The distance between the two points is: " + distance());
+            return "These points are on a vertical line: x = " + x1 + "\nThe slope is undefined.\nThere is no y-intercept.\nThe distance between the two points is: " + distance();
         } else {
-            System.out.println("The two points are (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ")");
-            System.out.println("The equation of the line between these points is: " + equation());
-            System.out.println("The slope of this line is: " + slope());
-            System.out.println("The y-intercept of the line is: " + yIntercept());
-            System.out.println("The distance between the two points is: " + distance());
+            return "The two points are (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ")\nThe equation of the line between these points is: " + equation() + "\nThe slope of this line is: " + slope() + "\nThe y-intercept of the line is: " + yIntercept() + "\nThe distance between the two points is: " + distance();
         }
     }
 }
